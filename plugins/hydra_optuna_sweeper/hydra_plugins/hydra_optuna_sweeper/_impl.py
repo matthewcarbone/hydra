@@ -413,6 +413,7 @@ class OptunaSweeperImpl(Sweeper):
                 "name": "optuna",
                 "best_params": best_trial.params,
                 "best_value": best_trial.value,
+                "best_trial": best_trial,
             }
             log.info(f"Best parameters: {best_trial.params}")
             log.info(f"Best value: {best_trial.value}")
